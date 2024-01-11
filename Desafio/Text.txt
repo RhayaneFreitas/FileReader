@@ -1,0 +1,34 @@
+Arquivo em forma de texto;
+test
+1
+@
+"
+In the code above, the open() function opens the tex
+t file in the reading mode, allowing us to grab informatio
+n from the file without accidentally changing it. In the first line, 
+the output of the open() function is assigned to the f variable, an object re
+presenting the text file. In the second line of the code above, we use the read() met
+hod to read the entire file and print its content. The close() method closes the fil
+e in the last line. We must always close the opened files after we're done with them t
+o release our computer resources and avoid raising exceptions.
+
+In Python, we can use the with con
+text manager to ensure a program releases the resour
+ces used after the file was closed, e
+ven if an exception has occurred. Let's try it:
+The code above creates a context using the with statem
+ent that the file object is no longer open out of the context. The bo
+und variable, f, represents the file object that all the file object methods a
+re accessible through the variable. The read() method reads the entire file in the 
+second line, and then the print() function outputs the file content.
+
+When the program reaches the end of the with 
+statement block context, it closes the file 
+to release the resources and ensures that other programs can use the
+m. In general, using the with statement is a highly recommended practice when y
+ou're working with objects that need to be closed as soon as they're no longer require
+d, such as files, databases, and network connections.
+
+Notice that we have access to the f variable even after exiti
+ng the with context manager block; however, the file is closed. Let's try some of
+ the file object properties to see if the variable is still alive and accessible:
