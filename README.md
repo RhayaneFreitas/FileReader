@@ -1,0 +1,1 @@
+Criação de uma aplicação que dado um arquivo leia e imprima o conteúdo,  para cada extensão de arquivo que sua aplicação suportar foi desenvolvido um leitor especializado para aquele arquivo.  As extensões que obrigatoriamente devem ser suportadas na sua aplicação são: txt, csv, json e xml.
